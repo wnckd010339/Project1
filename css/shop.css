@@ -1,5 +1,11 @@
 main{
     padding-top: 100px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+body{
+    overflow: hidden;
 }
 .shopmain ul{
     display: flex;
@@ -15,16 +21,30 @@ main{
     text-align: center;
 }
 .shopmain h3{
-    position: fixed;  
-    top: 100px;        /* 헤더 높이만큼 */
     width: 100%;
-    z-index: 100;
     text-align: center;
-    font-size: 35px;
-    background-color: none; /* 겹칠 때 글자 안 보이게 방지 */
+    font-size: 36px;
     margin: 0;
-    padding: 20px 0;
+    padding: 30px 0;
+    background-color: white;
+    flex-shrink: 0; /* 제목 영역이 줄어들지 않게 고정*/
 }   
+.shopmain .top, .shopmain .pants, .shopmain .caps{
+    
+}
+.shopmain{
+    flex: 1;
+    overflow-y: auto;
+    padding-bottom: 50px;
+}
+
+.shopmain::-webkit-scrollbar {
+    width: 5px;
+}
+.shopmain::-webkit-scrollbar-thumb {
+    background: #eee;
+    border-radius: 10px;
+}
 .shopmain img{
     width: 100%;
     height: auto;
@@ -42,4 +62,3 @@ main{
 .pants, .caps{
     margin-top: 50px;
 }
-
