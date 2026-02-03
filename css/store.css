@@ -2,7 +2,10 @@ main{
     margin-top: 100px;
     margin-left: 50px;
 }
-
+.flagship{
+    margin-left: 20px;
+    font-size: 43px;
+}
 .information{
     margin-top: 50px;
     display: flex;  
