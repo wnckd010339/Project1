@@ -11,40 +11,33 @@
     <style>
         section{
             width: 100%;
-            height: 60vh;
             padding-top: 100px;
             overflow: hidden;
+            height: auto;
         }
+        .slider{
+            width: 100%;
+            overflow: hidden;
+        }
+
+        /* 슬라이드 전체 */
         .main_image{
-            
             display: flex;
             width: 300%;
-            height: 100%;
-            padding: 0;
-            margin: 0;
             animation: slideshow 12s infinite ease-in-out;
         }
+
+        /* 각 슬라이드 */
         .main_image li{
-            background-size: contain;
-            list-style: none;
             flex: 1;
-            height: 100%;
-      
-        }
-        .main_image li:nth-child(1){
-            background: url(./image/freedom.logo.jpg) no-repeat center;
-            background-size: cover;
-            background-position: center;
-        }
-        .main_image li:nth-child(2){
-            background: url(./image/model1.jpg) no-repeat center;
-            background-size: cover;
-            background-position: center;
-        }
-        .main_image li:nth-child(3){
-            background: url(./image/model2.jpg) no-repeat center;
-            background-size: cover;
-            background-position: center;
+        }   
+
+        .main_image img{
+            width: 100%;
+            max-width: 1000px;
+            height: auto; 
+            display: block;
+            margin: 0 auto;
         }
 
         @keyframes slideshow{
@@ -71,41 +64,38 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <h1> &nbsp; <a href="index.html"><img src="./image/Freedom-main-logo.png" alt=""></a>  &nbsp; </h1>
-        </div>
-        <div class="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">SHOP</a></li>
-                <li><a href="store.html">Store</a></li>
-                <li><a href="community.html">Community</a></li>
-            </ul>
-        </div>
-        <div class="icons">
-            <ul>
-                <li>
-                    <i class="fa-regular fa-user"></i>
-                </li>
-                <li>
-                    <i class="fa-solid fa-bag-shopping"></i>
-                </li>
-                <li>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </li>
-                <li>
-                    <i class="fa-solid fa-globe"></i>
-                    한국어 | KRW
-                </li>
-            </ul>
-        </div>
-    </header>
+    <div class="logo">
+        <h1> &nbsp; <a href="index.html"><img src="./image/Freedom-main-logo.png" alt=""></a>  &nbsp; </h1>
+    </div>
+    <div class="navbar" id="navbarMenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="community.html">Community</a></li>
+        </ul>
+    </div>
+    <div class="icons">
+        <ul>
+            <li><i class="fa-regular fa-user"></i></li>
+            <li><i class="fa-solid fa-bag-shopping"></i></li>
+            <li><i class="fa-solid fa-magnifying-glass"></i></li>
+            <li class="menu" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </li>
+            <li class="lang-option">
+                <i class="fa-solid fa-globe"></i>
+                한국어 | KRW
+            </li>
+        </ul>
+    </div>
+</header>
     <main>
         <section>
             <ul class="main_image">
-                <li></li>
-                <li></li>
-                <li></li>
+                <li><img src="./image/freedom.logo.jpg" alt=""></li>
+                <li><img src="./image/model1.jpg" alt=""></li>
+                <li><img src="./image/model2.jpg" alt=""></li>
             </ul>
         </section>
        <img src="" alt="">
@@ -172,16 +162,13 @@
         </div>
         <!-- 애니메이션 1개 추가(배경, 상품 같이 좌우 등) -->
          <div class="container-store">
-            <div>
-                <ul>
-                    <li>
-                        <img src="./image/freedom_store.jpg" alt="">
-                    </li>
-                    <li>
-                        <h2>FREEDOM FLAGSHIP STORE</h2>
-                        <button class="explore">EXPLORE NOW</button>
-                    </li>
-                </ul>
+            <div class="store-image">
+                <img src="./image/freedom_store.jpg" alt="">
+            </div>
+
+            <div class="store-text">
+                <h2>FREEDOM<br>FLAGSHIP STORE</h2>
+                <button class="explore">EXPLORE NOW</button>
             </div>
          </div>
 
@@ -191,22 +178,23 @@
     <div class="container_footer1">
         <div class="footer_list1">
             <h4>무료배송</h4>
-            <p>10만원 이상 구매 시 무료배송(일부 상품 및 지역 제외)</p>
+            <p>10만원 이상 구매 시 <br>무료배송<br>(일부 상품 및 지역 제외)</p>
             <a href="https://www.cjlogistics.com/ko/tool/parcel/tracking">CJ대한통운 배송조회</a>
         </div>
         <div class="footer_list1">
-            <h4>교환/반품</h4>
-            <p>배송일로부터 14일 이내 교환 및 반품 가능(일부 상품 제외)</p>
-           
-        </div>
+            <h4>교환 / 반품</h4>
+            <p>배송일로부터 14일 이내<br>교환 및 반품 가능<br>(일부 상품 제외)</p>
+            <a href="#">교환/반품 신청</a>
+        </div>  
         <div class="footer_list1">
-            <h4>신제품/재입고</h4>
-            <p>카카오 채널을 추가하고 프리덤 알림을 빠르게 받아보세요.</p>
+            <h4>신제품 / 재입고</h4>
+            <p>카카오 채널 추가하고<br>프리덤 알림을<br>빠르게 받아보세요.</p>
             <a href="https://pf.kakao.com/_RHEPb">카카오 채널 추가</a>
         </div>
         <div class="footer_list1">
             <h4>문의하기</h4>
-            <p>제품 및 주문에 대해 궁금한 점이 있으시면 문의 주세요.</p>
+            <p>제품 및 주문에 대해<br>궁금한 점이 있으시면<br>문의 주세요.</p>
+            <a href="#">1:1 상담하기</a>
         </div>
     </div>
     <hr>
@@ -214,14 +202,13 @@
     <footer>
         <!------------------------------- footer2 -------------------------------------->
         <div class="container_footer">
-            
             <div class="footer_list">
-                <h4>ⓒFREEDOM 2025</h4><br>
-                <i class="fa-brands fa-instagram"><a href="https://www.instagram.com/freedom__athletic"></a></i>
-                <ul>
-                    <li></li>
-                </ul>
+                <h4>ⓒFREEDOM 2025</h4>
+                <a href="https://www.instagram.com/freedom__athletic" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
             </div>
+
             <div class="footer_list">
                 <h4>FREEDOM</h4>
                 <ul>
@@ -229,6 +216,7 @@
                     <li>엠버서더 지원</li>
                 </ul>
             </div>
+
             <div class="footer_list">
                 <h4>FAQ</h4>
                 <ul>
@@ -239,13 +227,17 @@
                     <li>반품교환</li>
                 </ul>
             </div>
-            <div class="footer_list">
+
+            <div class="footer_list customer-service">
                 <h4>CUSTOMER SERVICE</h4>
-                <ul>
-                    <li></li>
-                </ul>
+                <p>모든 문의는 1:1 문의(채널톡)를 통해<br>접수 및 상담이 진행됩니다.</p>
+                <span class="hours">10:00 AM – 6:00 PM</span>
+                <span class="hours">Sat, Sun, Holiday CLOSED</span>
+                <p class="email">비즈니스. freedom@freedomwhatever.com</p>
+                <p class="email">CS. cs@freedomwhatever.com</p>
             </div>
         </div>
     </footer>
+    <script src="./menu.js"></script>
 </body>
 </html>
