@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+.menu{display: none;}
 header {
   position: fixed;
   top: 0;
@@ -45,25 +46,61 @@ a:hover {
   font-size: 20px;
 }
 
-/* 브라우저의 가로가 768 이하일 때 */
 @media screen and (max-width: 768px) {
-  header {
-    height: 170px;
-    align-items: flex-start;
-  }
-  .navbar ul{
-    flex-direction: row;
-  }
-  .navbar ul li{
-    line-height: 5;
-  }
-  .fa-music,
-  .appo {
-    /* visibility: hidden; */ /* 눈에서만 안 보인다 */
-    display: none; /* 자리 자체 차지하지 않는다. */
-  }
-  .fa-bars {
-    /* visibility: hidden; */ /* 눈에서만 안 보인다 */
-    display: none; /* 자리 자체 차지하지 않는다. */
-  }
+    header {
+        justify-content: space-between o !important;
+        padding: 0 10px;
+        height: 70px;
+    }
+
+    /* 1. PC용 메뉴 숨기기 및 모바일 드롭다운 설정 */
+    .navbar {
+        display: none; /* 기본 숨김 */
+        position: absolute;
+        top: 70px;    /* 헤더 높이만큼 아래로 */
+        left: 0;
+        width: 100%;
+        background-color: rgba(30, 30, 30, 0.95); /* 2번 그림의 어두운 배경 */
+        z-index: 999;
+    }
+
+    /* 2. active 클래스가 붙으면 보이게 함 */
+    .navbar.active {
+        display: block !important;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .navbar ul li a {
+        color: white; /* 어두운 배경에 흰 글씨 */
+        font-size: 18px;
+    }
+
+    /* 3. 아이콘 영역 조절 */
+    .menu { 
+        display: block; /* 모바일에서 햄버거 버튼 보임 */
+        cursor: pointer;
+    }
+
+    .icons ul {
+        align-items: center;
+    }
+
+    .icons li {
+        margin: 0 8px; /* 아이콘 간격 좁힘 */
+        padding: 0;
+    }
+
+    /* 지구본 텍스트 숨기기 */
+    .lang-option {
+        display: none;
+    }
 }
