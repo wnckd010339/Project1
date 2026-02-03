@@ -11,7 +11,7 @@
 }
 .top img, .pants img{
     width: 100%;
-   display: block;
+    display: block;
     transition: 0.3s;
 }
 
@@ -52,25 +52,23 @@
     
 }
 
-.store-animation1{
-    background: url(../image/freedom_store.jpg);
-    height: 2000px;
-    margin-top: 400px;
-    margin-bottom: 100px;
+/* 푸터 바로 상단 */
+.container-store{
+    margin-top: -200px;
+    border: 2px solid black;
+    width: 100%;
+}
+.container-store img{
+    width: 50%;
+    height: 100%;
+}
+button{
+    background-color: black;
+    color: white;
+    padding: 20px;
     
 }
-.store-animation1 h3{
-    width: 100%;
-    padding-top: 50%;
-    font-size: 50px;
-    animation: slideshow1 2s ease-in-out forwards;
-}
-@keyframes slideshow1{
-    from{
-        right: (-25%);
-        opacity: 0;
-    }to{
-        right: (25%);
-        opacity: 1;
-    }
+.container-store h2, .container-store button{
+    text-align: left;
+    margin-left: 100px;
 }
