@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css">
     <style>
       main {
         margin-top: 200px;
@@ -23,7 +24,8 @@
         display: none;
       }
       .use_info label {
-        background-color: green;
+        background-color: rgb(5, 5, 5);
+        color: white;
         cursor: pointer;
         padding: 16px;
         display: flex;
@@ -34,7 +36,7 @@
         font-size: 30px;
       }
       .use_info .answer, .order_info .answer {
-        background-color: lightgreen;
+        background-color: lightgray;
         padding: 0 16px;
         transition: 0.3s;
         overflow: hidden;
@@ -55,22 +57,33 @@
   <body>
     <header>
       <div class="logo">
-        <h1>&nbsp; <a href="index.html">LOGO</a> &nbsp;</h1>
-        <!-- 엔티티 코드 -->
-      </div>
-      <div class="navbar">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="shop.html">SHOP</a></li>
-          <li><a href="store.html">Store</a></li>
-          <li><a href="community.html">Community</a></li>
-        </ul>
-      </div>
-      <div class="icons">
-        <ul>
-          <li class="login"><a href="login.html">로그인</a></li>
-        </ul>
-      </div>
+            <h1> &nbsp; <a href="index.html"><img src="./image/Freedom-main-logo.png" alt=""></a>  &nbsp; </h1>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="community.html">Community</a></li>
+            </ul>
+        </div>
+        <div class="icons">
+            <ul>
+                <li>
+                    <i class="fa-regular fa-user"></i>
+                </li>
+                <li>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </li>
+                <li>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </li>
+                <li>
+                    <i class="fa-solid fa-globe"></i>
+                    한국어 | KRW
+                </li>
+            </ul>
+        </div>
     </header>
     <main>
       <section class="faq">
@@ -92,10 +105,66 @@
           <li>
             <input type="radio" name="faq" id="question2">
             <label for="question2">신규 회원 가입 시 20% 할인 쿠폰 발급</label>
+            <div class="answer">
+              신규 회원가입 쿠폰<br>
+              -회원가입 시 자동 발급<br>
+              쿠폰 사용불가<br>
+              -굿즈 / 콜라보 상품 (올림피아 제외)<br>
+              -할인상품
+            </div>
+          </li>
+          <li>
+            <input type="radio" name="faq" id="question3">
+            <label for="question3">할인코드 사용 방법</label>
+            <div class="answer">
+              할인코드 사용 방법<br>
+              -결제 페이지에서 할인 코드 작성 후 사용 가능<br>
+              할인코드 적용 가능 제품<br>
+              -프리덤<br>
+              -올림피아 콜라보<br>
+              -파워하우스 콜라보<br>
+              -카딜로 콜라보<br>
+              <!-- <img src="./image/salecode.jpg" alt=""> -->
+            </div>
           </li>
         </ul>
       </section>
     </main>
+    <footer>
+        <!------------------------------- footer2 -------------------------------------->
+        <div class="container_footer">
+            
+            <div class="footer_list">
+                <h4>ⓒFREEDOM 2025</h4><br>
+                <i class="fa-brands fa-instagram"><a href="https://www.instagram.com/freedom__athletic"></a></i>
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="footer_list">
+                <h4>FREEDOM</h4>
+                <ul>
+                    <li>매장안내</li>
+                    <li>엠버서더 지원</li>
+                </ul>
+            </div>
+            <div class="footer_list">
+                <h4>FAQ</h4>
+                <ul>
+                    <li>이용안내</li>
+                    <li>회원혜택</li>
+                    <li>주문안내</li>
+                    <li>상품배송</li>
+                    <li>반품교환</li>
+                </ul>
+            </div>
+            <div class="footer_list">
+                <h4>CUSTOMER SERVICE</h4>
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
   </body>
 </html>
-
