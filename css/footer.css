@@ -9,10 +9,33 @@ main{
 
 footer{
     width: 100%;
-    background-color: lightgray;
+    background-color: white;
     padding: 20px 0;
 }
 
+/* footer1번 */
+
+.container_footer1{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+.footer_list1{
+    flex: 1;
+}
+.footer_list1 h4{
+    margin-bottom: 10px;
+}
+.footer_list1 a{
+    color: gray;
+    text-decoration:underline;
+}
+
+/* footer2번 */
 
 .container_footer{
     font-weight: 20px;
