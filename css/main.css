@@ -1,0 +1,76 @@
+.container-top, .container-pants{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.top, .pants{
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+}
+.top img, .pants img{
+    width: 100%;
+   display: block;
+    transition: 0.3s;
+}
+
+.top h3{
+    text-align: center;
+}
+.top .info, .pants .info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.5); /* 반투명 어두운 배경 */
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;          /* 처음엔 안 보임 */
+    transition: 0.3s;
+}
+.top:hover .info, .pants:hover .info{
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.shopmain h3{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.shopmain ul{
+    position: fixed;
+    
+}
+
+.store-animation1{
+    background: url(../image/freedom_store.jpg);
+    height: 2000px;
+    margin-top: 400px;
+    margin-bottom: 100px;
+    
+}
+.store-animation1 h3{
+    width: 100%;
+    padding-top: 50%;
+    font-size: 50px;
+    animation: slideshow1 2s ease-in-out forwards;
+}
+@keyframes slideshow1{
+    from{
+        right: (-25%);
+        opacity: 0;
+    }to{
+        right: (25%);
+        opacity: 1;
+    }
+}

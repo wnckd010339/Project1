@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 70px;
+  align-items: center;
+  padding-top: 15px;
+  z-index: 100;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+li {
+  padding: 0 15px;
+  margin: 20px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+}
+.appo {
+  padding: 0 5 px;
+}
+a:hover {
+  color: blue;
+}
+.appo:hover {
+  background-color: blue;
+  cursor: pointer;
+  color: aliceblue;
+  border-radius: 7px;
+}
+
+/* 브라우저의 가로가 768 이하일 때 */
+@media screen and (max-width: 768px) {
+  header {
+    height: 170px;
+    align-items: flex-start;
+  }
+  .navbar ul{
+    flex-direction: row;
+  }
+  .navbar ul li{
+    line-height: 5;
+  }
+  .fa-music,
+  .appo {
+    /* visibility: hidden; */ /* 눈에서만 안 보인다 */
+    display: none; /* 자리 자체 차지하지 않는다. */
+  }
+  .fa-bars {
+    /* visibility: hidden; */ /* 눈에서만 안 보인다 */
+    display: none; /* 자리 자체 차지하지 않는다. */
+  }
+}

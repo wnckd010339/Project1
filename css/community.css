@@ -1,0 +1,55 @@
+/* div container */
+h3{
+    margin-top: 150px;
+    text-align: center;
+    font-size: 36px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    margin: 30px;
+}
+
+.community a{
+    text-decoration: none;
+    color: lightgray;
+}
+.community a:hover{
+    color: black;
+    text-decoration:underline
+}
+
+/* div event */
+
+.event ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.event ul li{
+    width: 20%;
+    margin: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.event img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.event p, .event h5{
+    text-align: left;
+    font-size: 20px;
+}
+
+.event p{
+    color: gray;
+}

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/header.css" />
+    <style>
+      main {
+        margin-top: 200px;
+      }
+      .faq {
+        max-width: 800px;
+        margin: 60px auto;
+      }
+      .use_info {
+        list-style: none;
+      }
+      .use_info li {
+        margin-bottom: 8px;
+      }
+      .use_info input {
+        display: none;
+      }
+      .use_info label {
+        background-color: green;
+        cursor: pointer;
+        padding: 16px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .use_info label::after {
+        content: "+";
+        font-size: 30px;
+      }
+      .use_info .answer, .order_info .answer {
+        background-color: lightgreen;
+        padding: 0 16px;
+        transition: 0.3s;
+        overflow: hidden;
+        max-height: 0;
+      }
+      .use_info input:checked + label + .answer, 
+      .order_info input:checked + label + .answer {
+        max-height: 200px;
+        padding: 16px;
+      }
+      .use_info input:checked + label::after 
+      , .order_info input:checked + label::after 
+      {
+        transform: rotate(45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>&nbsp; <a href="index.html">LOGO</a> &nbsp;</h1>
+        <!-- 엔티티 코드 -->
+      </div>
+      <div class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">SHOP</a></li>
+          <li><a href="store.html">Store</a></li>
+          <li><a href="community.html">Community</a></li>
+        </ul>
+      </div>
+      <div class="icons">
+        <ul>
+          <li class="login"><a href="login.html">로그인</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="faq">
+        <h4>이용 안내</h4>
+        <ul class="use_info">
+          <li>
+            <input type="radio" name="faq" id="question1">
+            <label for="question1">운영시간</label>
+            <div class="answer">
+              CS 운영시간<br>
+              AM : 10:00 ~ PM : 18:00<br><br>
+              프리덤은 보다 빠른 상담을 위해<br>
+              전화 상담을 별도로 운영하고 있지 않습니다.<br><br>
+              오른쪽 하단의 1:1문의 버튼을 클릭하신 후, <br>
+              문의사항을 채널톡 메시지로 남겨주시면<br>
+              최대한 빠르게 답변드리겠습니다.
+            </div>
+          </li>
+          <li>
+            <input type="radio" name="faq" id="question2">
+            <label for="question2">신규 회원 가입 시 20% 할인 쿠폰 발급</label>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

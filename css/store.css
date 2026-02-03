@@ -1,0 +1,16 @@
+main{
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.information{
+    margin-top: 50px;
+    display: flex;  
+    justify-content: space-around;
+}
+hr{
+    margin-top: 30px;
+    background-color: lightgray;
+    height: 1px;
+    border: 0   ;
+}

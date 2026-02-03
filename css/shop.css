@@ -1,0 +1,45 @@
+main{
+    padding-top: 100px;
+}
+.shopmain ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.shopmain ul li{
+    width: 30.33%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.shopmain h3{
+    position: fixed;  
+    top: 100px;        /* 헤더 높이만큼 */
+    width: 100%;
+    z-index: 100;
+    text-align: center;
+    font-size: 35px;
+    background-color: none; /* 겹칠 때 글자 안 보이게 방지 */
+    margin: 0;
+    padding: 20px 0;
+}   
+.shopmain img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+}
+.shopmain p, .shopmain h4 {
+    text-align: center;
+    margin: 5px 0;
+}
+.top p, .top h4, .pants p, .pants h4, .caps p, .cs h4{
+    text-align: center;
+}
+
+.pants, .caps{
+    margin-top: 50px;
+}
+
