@@ -32,13 +32,17 @@ a {
   padding: 0 5 px;
 }
 a:hover {
-  color: blue;
+  color: gray;
 }
 .appo:hover {
   background-color: blue;
   cursor: pointer;
   color: aliceblue;
   border-radius: 7px;
+}
+
+.icons{
+  font-size: 20px;
 }
 
 /* 브라우저의 가로가 768 이하일 때 */
