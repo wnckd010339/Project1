@@ -15,45 +15,42 @@
 
   <body>
     <header>
-      <div class="logo">
-            <h1> &nbsp; <a href="index.html"><img src="./image/Freedom-main-logo.png" alt=""></a>  &nbsp; </h1>
-        </div>
-        <div class="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">SHOP</a></li>
-                <li><a href="store.html">Store</a></li>
-                <li><a href="community.html">Community</a></li>
-            </ul>
-        </div>
-        <div class="icons">
-            <ul>
-                <li>
-                    <i class="fa-regular fa-user"></i>
-                </li>
-                <li>
-                    <i class="fa-solid fa-bag-shopping"></i>
-                </li>
-                <li>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </li>
-                <li>
-                    <i class="fa-solid fa-globe"></i>
-                    한국어 | KRW
-                </li>
-            </ul>
-        </div>
+    <div class="logo">
+        <h1> &nbsp; <a href="index.html"><img src="./image/Freedom-main-logo.png" alt=""></a>  &nbsp; </h1>
+    </div>
+    <div class="navbar" id="navbarMenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="community.html">Community</a></li>
+        </ul>
+    </div>
+    <div class="icons">
+        <ul>
+            <li><i class="fa-regular fa-user"></i></li>
+            <li><i class="fa-solid fa-bag-shopping"></i></li>
+            <li><i class="fa-solid fa-magnifying-glass"></i></li>
+            <li class="menu" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </li>
+            <li class="lang-option">
+                <i class="fa-solid fa-globe"></i>
+                한국어 | KRW
+            </li>
+        </ul>
+    </div>
     </header>
 
+
     <main>
-      <hr>
       <h3>COMMUNITY</h3>
       <div class="container">
         <div class="community">
           <a href="community.html">NEWS / EVENT</a>
         </div>
         <div class="community">
-            <a href="index.html">상담하기</a>
+            <a href="#">상담하기</a>
         </div>
         <div class="community">
             <a href="faq.html">FAQ</a>
@@ -114,7 +111,7 @@
           </li>
         </ul>
       </div>
-    </main>
+    </main><hr>
     <footer>
         <!------------------------------- footer2 -------------------------------------->
         <div class="container_footer">
@@ -154,5 +151,6 @@
             </div>
         </div>
     </footer>
+    <script src="./menu.js"></script>
   </body>
 </html>
