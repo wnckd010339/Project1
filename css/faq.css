@@ -1,0 +1,100 @@
+main {
+    margin-top: 200px;
+      
+}
+
+h3{
+    margin-top: 150px;
+    text-align: center;
+    font-size: 36px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    margin: 30px;
+}
+
+.community a{
+    text-decoration: none;
+    color: lightgray;
+}
+.community a:hover{
+    color: black;
+    text-decoration:underline
+}
+
+      .faq {
+        max-width: 800px;
+        /* margin: 50px auto; */
+        justify-content: flex-start;
+        margin-bottom: 50px;
+      }
+      
+      main h4{
+        font-size: 35px;
+        margin-left: 30px;
+      }
+      .use_info, .user_benefit, .order_info {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 800px;
+      }
+      .use_info li, .user_benefit li, .order_info li {
+        width: 100%;
+        flex: none;
+        margin-bottom: 8px;
+        position: relative;
+      }
+      .use_info input, .user_benefit input, .order_info input {
+        display: none;
+      }
+      .use_info label, .user_benefit label, .order_info label {
+        background-color: rgb(5, 5, 5);
+        color: white;
+        cursor: pointer;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .use_info label::after, .user_benefit label::after 
+      , .order_info label::after
+      {
+        content: "+";
+        font-size: 30px;
+      }
+      .use_info .answer, .user_benefit .answer
+      , .order_info .answer
+      {
+        background-color: lightgray;
+        padding: 0 40px;
+        transition: 0.3s;
+        overflow: hidden;
+        max-height: 0;
+      }
+      .use_info input:checked + label + .answer 
+      , .user_benefit input:checked + label + .answer
+      , .order_info input:checked + label + .answer
+      {
+        max-height: 500px;
+        padding: 16px;
+      }
+      .use_info input:checked + label::after 
+      , .user_benefit input:checked + label::after
+      , .order_info input:checked + label::after
+      {
+        transform: rotate(45deg);
+      }
+    
+@media screen and (max-width: 768px) {
+    .use_info li{
+        
+        box-sizing: border;
+        padding: 20px;
+        
+    }
+}
