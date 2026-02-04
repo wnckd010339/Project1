@@ -107,3 +107,13 @@ a:hover {
         display: none;
     }
 }
+@media screen and (max-width: 768px) {
+      .icons ul{
+          align-items: center;
+      }
+      .icons li{
+        margin: 0 8px;
+        padding: 20px;
+      }
+}
+
