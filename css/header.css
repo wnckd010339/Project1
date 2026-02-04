@@ -45,17 +45,19 @@ a:hover {
 .icons{
   font-size: 20px;
 }
+  
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     header {
-        justify-content: space-between o !important;
+        justify-content: space-between  !important;
         padding: 0 10px;
         height: 70px;
     }
 
+    /* !important : 우선권 부여 */
     /* 1. PC용 메뉴 숨기기 및 모바일 드롭다운 설정 */
     .navbar {
-        display: none; /* 기본 숨김 */
+        display: none !important; /* 기본 숨김 */
         position: absolute;
         top: 70px;    /* 헤더 높이만큼 아래로 */
         left: 0;
@@ -80,14 +82,15 @@ a:hover {
     }
 
     .navbar ul li a {
-        color: white; /* 어두운 배경에 흰 글씨 */
+        color: white;
         font-size: 18px;
     }
 
     /* 3. 아이콘 영역 조절 */
     .menu { 
-        display: block; /* 모바일에서 햄버거 버튼 보임 */
+        display: block !important; /* 모바일에서 햄버거 버튼 보임 */
         cursor: pointer;
+        font-size: 24px;
     }
 
     .icons ul {
@@ -96,7 +99,7 @@ a:hover {
 
     .icons li {
         margin: 0 8px; /* 아이콘 간격 좁힘 */
-        padding: 0;
+        padding: 20px;
     }
 
     /* 지구본 텍스트 숨기기 */
