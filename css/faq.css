@@ -92,7 +92,7 @@ h3{
     
 @media screen and (max-width: 768px) {
     .use_info li{
-        
+        width: 80%;
         box-sizing: border;
         padding: 20px;
         
