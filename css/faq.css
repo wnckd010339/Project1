@@ -91,7 +91,7 @@ h3{
       }
     
 @media screen and (max-width: 768px) {
-    .use_info li{
+    .use_info li, .user_benefit li, .order_info li{
         width: 80%;
         box-sizing: border;
         padding: 20px;
