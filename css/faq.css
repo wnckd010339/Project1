@@ -98,3 +98,15 @@ h3{
         
     }
 }
+
+@media screen and (max-width: 1024px) {
+  .use_info, .user_benefit, .order_info {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 800px;
+      }
+}
